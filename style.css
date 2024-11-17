@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(220, 190, 152);
+}
+.input-section {
+    width: 100%;
+    height: 320px;
+    /* background-color:rgb(220, 190, 152); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.input-area {
+    width: 450px;
+    background-color: gray;
+       background-color: rgb(246, 191, 88);
+    padding: 10px;
+    border-radius: 10px;
+}
+.input-area input {
+    width: 90%;
+    margin-inline: 5%;
+    height: 35px;
+    margin-bottom: 10px;
+    padding: 0 13px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
+.input-area label {
+    font-size: 17px;
+    font-family: sans-serif;
+      margin-inline: 5%;
+}
+.btn-area {
+    width: 100%;
+    /* background-color: red; */
+    height: 35px;
+    margin-top: 10px;
+}
+.btn-area button {
+    width: 100px;
+    height: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 6px;border: 1.5px solid black;
+    margin-inline: 5%;
+}
+.btn-area button:hover {
+    background-color: rgb(37, 106, 244);
+    background-color: rgb(245, 169, 26);
+    transition: 0.4s ease-in-out;
+    color: white;
+    cursor: pointer;
+}
+.result-section {
+    width: 100%;
+    height: calc(100vh - 320px);
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.result-container {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(245, 169, 26);
+    padding: 30px 20px;
+    border-radius: 10px;
+    transform: translateY(-230px);
+    transition: all 0.5s ease-in-out;
+}
+.result-container p {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.hide-result-container {
+    visibility: hidden;
+}
+.down-result-container {
+    transform: translateY(0px);
+}
+.vibrate {
+    animation: vibrate 0.5s;
+}
+@keyframes vibrate {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-5px);
+    }
+    40% {
+        transform: translateX(5px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

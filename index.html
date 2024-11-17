@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="input-section">
+        <div class="input-area">
+          <div>
+            <label for="text-input">Enter your name: </label>
+            <input type="text" id="text-input" required>
+          </div>
+            <div>
+                <label for="email-input">Enter your email: </label>
+            <input type="email" id="email-input" required>
+            </div>
+           <div>
+            <label for="password-input">Enter your password: </label>
+            <input type="password" id="password-input" required>
+           </div>
+           <div class="btn-area">
+            <button id="btn">Submit</button>
+           </div>
+        </div>
+    </section>
+ <section class="result-section">
+    <div class="result-container hide-result-container">
+        <p>Name: <span id="name-result">Zaid</span></p>
+        <p>Email: <span id="email-result">muzammil2000@gmail.com</span></p>
+        <p>Password: <span id="password-result">1423434</span></p>
+    </div>
+ </section>
+    <script src="./script.js"></script>
+</body>
+</html>
